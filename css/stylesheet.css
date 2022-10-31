@@ -2,6 +2,8 @@ body{
   font-family: sans-serif;
   font-size:110%;
   background-color: #FCF7F8;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -9,6 +11,7 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   color: #FCF7F8;
   background-color: darkslategrey;
+  
 }
 #headshot{
   height: 20%;
@@ -34,4 +37,9 @@ footer {
 .icons{
   width: 3rem;
   margin: 0.5rem;
+}
+.main{
+  display: flex;
+  flex-direction: row;
+  overflow: unset;
 }
