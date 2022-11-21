@@ -1,0 +1,17 @@
+ /* The animation code */
+@keyframes icon-img {
+  10%   {transform: translate(30px, -20px);}
+  25%  {transform: translate(60px, -20px);}
+  50%  {transform: translate(90px, -20px);}
+  75%  {transform: translate(120px, -20px);}
+  100% {transform: translate(150px, -20px);}
+}
+
+/* The element to apply the animation to */
+.icons {
+  width: 100px;
+  height: 100px;
+  animation-name: icon-img;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;    
+} 
