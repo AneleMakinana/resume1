@@ -11,6 +11,9 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   color: #FCF7F8;
   background-color: darkslategrey;
+  background-image: white url(https://unsplash.com/photos/iar-afB0QQw);
+  background-repeat: no-repeat;
+  background-position: 100%;
   
 }
 #headshot{
@@ -32,10 +35,13 @@ footer {
   color: #FCF7F8;
   padding: 1rem;
 }
+
 .nav-menu{
   list-style-type: none;
-  padding: 0%;
+  padding: 0rem;
+  text-align: left;
 }
+
 .Container .button{
   font-size: large;
   width: 3rem;
@@ -98,4 +104,6 @@ transition: transform 0.3s ease;
   display: flex;
   flex-direction: row;
   overflow: unset;
+  font-family: Arial, Helvetica, sans-serif;
 }
+

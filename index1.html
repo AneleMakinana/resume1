@@ -9,13 +9,20 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b139150a8c.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
 
     <header id="heading">
-
-        <img id="headshot" src="images/Dimzer Makinana.jpg" alt="My Profile Photo">
+        <div>
+        <picture>
+            <source media="(max-width: 420px)" srcset="images/Dimzer-Makinana-small.jpg">
+            <source media="(max-width: 1000px)" srcset="images/Dimzer-Makinana-medium.jpg">
+            <img id="headshot" src="images/Dimzer Makinana.jpg" alt="My Profile Photo">
+        </picture>
+        </div>
+        
         <p>
             <h1>Anele Arnold Makinana</h1>
         </p>
@@ -119,24 +126,23 @@
                 
                <div class="Container">
 
-                <div class="button">
+                <div class="button" onclick="document.location='https://www.LinkedIn.com'">
                 <img class="icon" src="images/linkedin icon.webp" alt="Anele Makinana LinkedIn" width="40">
                 
-                <a href="http://www.LinkedIn.com" target="_blank"></a><span>LinkedIn</span>
+               <span>LinkedIn</span>
                 </div>
                
-                <div class="button">
+                <div class="button" onclick="document.location='https://github.com/AneleMakinana/resume1'">
               <img class="icon" src="images/Github_icon.png" alt="AneleMakinana Github" width="40">
               
-              <a href="http://www.Github.com" target="_blank"></a><span>Github</span>
+              <span>Github</span>
                 </div>
                
-                <div class="button">
+                <div class="button" onclick="document.location='https://mail.google.com/mail/u/0/#inbox'">
               <img class="icon" src="images/gmail-icon.webp" alt="Anele Makinana Gmail" width="40">
 
-              <a href="http://www.Gmail.com" target="_blank"></a><span>Gmail</span>
-              
-                </div>
+              <span>Gmail</span>
+              </div>
            </p>
 
         </div>
