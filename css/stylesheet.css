@@ -1,3 +1,5 @@
+/* for computer screens and laptops */
+
 body{
   font-family: sans-serif;
   font-size:110%;
@@ -44,8 +46,8 @@ footer {
 
 .Container .button{
   font-size: large;
-  width: 3rem;
-  margin: 0 5px;
+  width: 0.2rem;
+  height: 0.2rem;
   position: relative;
   display: inline-block;
   padding: 2rem;
@@ -54,7 +56,7 @@ footer {
   border: 3px solid #343330;
   background: crimson;
   cursor: pointer;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .button::after, .button::before{
@@ -107,7 +109,9 @@ transition: transform 0.3s ease;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media only screen and (max-width: 420px) {
+/* for small mobile screens */
+
+@media only screen and (max-width: 620px) {
   body{
     font-family: sans-serif;
     font-size:50%;
@@ -121,8 +125,6 @@ transition: transform 0.3s ease;
     font-family: Arial;
     color: black;
     background-color: lightslategrey;
-    background-image: white url(https://unsplash.com/photos/iar-afB0QQw);
-    background-repeat: no-repeat;
     background-position: 100%;
     
   }
@@ -152,10 +154,10 @@ transition: transform 0.3s ease;
     text-align: left;
   }
   
-  Container .button{
+  .Container .button{
     font-size: large;
-    width: 3rem;
-    margin: 0 5px;
+    width: 0.1rem;
+    height: 0.1rem;
     position: relative;
     display: inline-block;
     padding: 2rem;
@@ -164,7 +166,73 @@ transition: transform 0.3s ease;
     border: 3px solid #343330;
     background: crimson;
     cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
   }
+  
+}
+
+  /* for tablets */
+
+@media only screen and (max-width: 1000px) {
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    background-color: lightslategrey;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    text-align: center;
+    font-family: Arial;
+    color: whitesmoke;
+    background-color: lightslategrey;
+    background-image: url(../images/brick-after-brick.jpg);
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: 100%;
+    
+  }
+  #headshot{
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    border: 3px solid lightslategrey;
+  }
+  
+  footer {
+    display: grid;
+    background-color: #343330;
+    text-align: center;
+    background: linear-gradient(315deg, #ffffff 0%, d7elec 74%);
+  }
+  #sidebar{
+    width: 20%;
+    background-color: whitesmoke;
+    color: black;
+    padding: 1rem;
+  }
+  
+  .nav-menu{
+    list-style-type: none;
+    padding: 0rem;
+    text-align: left;
+  }
+  
+  .Container .button{
+    font-size: large;
+    width: 0.1rem;
+    height: 0.1rem;
+    position: relative;
+    display: inline-block;
+    padding: 2rem;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 3px solid #343330;
+    background: crimson;
+    cursor: pointer;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+  }
+  
   
 }
