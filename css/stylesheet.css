@@ -1,16 +1,157 @@
+
+
+
+/* for small mobile screens */
+
+@media only screen and (max-width: 620px){
+  body{
+    font-family: sans-serif;
+    font-size:50%;
+    color: #ffffff;
+    background-color: #FCF7F8;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    text-align: center;
+    font-family: Arial;
+    color: black;
+    background-color: lightslategrey;
+    background-image: url("../images/Code-wallpaper.png");
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: 100%;
+    
+  }
+  #headshot{
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+  }
+  
+  footer {
+    display: grid;
+    background-color: #343330;
+    margin: 10%;
+    text-align: center;
+    background: linear-gradient(315deg, #ffffff 0%, d7elec 74%);
+  }
+  
+  
+  .nav-menu{
+    list-style-type: none;
+    padding: 0rem;
+    text-align: left;
+  }
+  
+  .Container-button .button{
+    font-size: large;
+    width: 0.1rem;
+    height: 0.1rem;
+    position: relative;
+    display: inline-block;
+    padding: 2rem;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 3px solid #343330;
+    background: crimson;
+    cursor: pointer;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+}
+
+  /* for tablets */
+
+@media only screen and (max-width: 1000px){
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    text-align: center;
+    font-family: Arial;
+    color: whitesmoke;
+    background-color: lightslategrey;
+    background-image: url(../images/brick-after-brick.jpg);
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: 100%;
+    
+  }
+  #headshot{
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    border: 3px solid lightslategrey;
+  }
+  
+  footer {
+    display: grid;
+    background-color: #343330;
+    margin: 10%;
+    text-align: center;
+    background: linear-gradient(315deg, #ffffff 0%, d7elec 74%);
+  }
+  
+  
+  .nav-menu{
+    list-style-type: none;
+    padding: 0rem;
+    text-align: left;
+  }
+  
+  .Container-button .button{
+    font-size: large;
+    width: 0.1rem;
+    height: 0.1rem;
+    position: relative;
+    display: inline-block;
+    padding: 2rem;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 3px solid #343330;
+    background: crimson;
+    cursor: pointer;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+  } 
+  
+}
+
 /* for computer screens and laptops */
 
 body{
   font-family: sans-serif;
   font-size:110%;
-  background-color: #FCF7F8;
+  margin: 0.5%;
+  text-align: left;
+  background-image: url("../images/hello-world-coding.jpg");
+  background-size: auto;
+  background-repeat: repeat;
   display: flex;
   flex-direction: column;
+}
+.container{
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+  background-color: darkslategrey;
+  border-radius: 2%;
+  display: grid;
+}
+.content{
+  color: #FCF7F8;
 }
 
 header {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 1.5px;
+  margin: 0.5%;
+  border-radius: 0.5%;
   color: #FCF7F8;
   background-color: darkslategrey;
   background-image: white url(https://unsplash.com/photos/iar-afB0QQw);
@@ -27,24 +168,22 @@ header {
 
 footer {
   display: grid;
+  margin: 10%;
+  border-radius: 10%;
   background-color: #343330;
   text-align: center;
   background: linear-gradient(315deg, #ffffff 0%, d7elec 74%);
 }
-#sidebar{
-  width: 20%;
-  background-color: grey;
-  color: #FCF7F8;
-  padding: 1rem;
-}
+
 
 .nav-menu{
   list-style-type: none;
+  color: #000000;
   padding: 0rem;
   text-align: left;
 }
 
-.Container .button{
+.Container-button .button{
   font-size: large;
   width: 0.2rem;
   height: 0.2rem;
@@ -72,7 +211,7 @@ z-index: -1;
 transition: transform 0.3s ease;
 }
 
-.Container .button:hover{
+.Container-button .button:hover{
   width: 80px;
   background-color: #FCF7F8;
   transition: all 0.4s ease-out;
@@ -87,7 +226,7 @@ transition: transform 0.3s ease;
   transform: translate(12px, 12px);
 }
 
-.Container .button .icon{
+.Container-button .button .icon{
   font-size: 30px;
   display: inline-block;
   height: 50px;
@@ -107,132 +246,4 @@ transition: transform 0.3s ease;
   flex-direction: row;
   overflow: unset;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-/* for small mobile screens */
-
-@media only screen and (max-width: 620px) {
-  body{
-    font-family: sans-serif;
-    font-size:50%;
-    background-color: #FCF7F8;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  header {
-    text-align: center;
-    font-family: Arial;
-    color: black;
-    background-color: lightslategrey;
-    background-position: 100%;
-    
-  }
-  #headshot{
-    height: 20%;
-    width: 20%;
-    border-radius: 50%;
-    border: 3px solid whitesmoke;
-  }
-  
-  footer {
-    display: grid;
-    background-color: #343330;
-    text-align: center;
-    background: linear-gradient(315deg, #ffffff 0%, d7elec 74%);
-  }
-  #sidebar{
-    width: 20%;
-    background-color: rosybrown;
-    color: #FCF7F8;
-    padding: 1rem;
-  }
-  
-  .nav-menu{
-    list-style-type: none;
-    padding: 0rem;
-    text-align: left;
-  }
-  
-  .Container .button{
-    font-size: large;
-    width: 0.1rem;
-    height: 0.1rem;
-    position: relative;
-    display: inline-block;
-    padding: 2rem;
-    overflow: hidden;
-    border-radius: 20px;
-    border: 3px solid #343330;
-    background: crimson;
-    cursor: pointer;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
-  }
-  
-}
-
-  /* for tablets */
-
-@media only screen and (max-width: 1000px) {
-  body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 80%;
-    background-color: lightslategrey;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  header {
-    text-align: center;
-    font-family: Arial;
-    color: whitesmoke;
-    background-color: lightslategrey;
-    background-image: url(../images/brick-after-brick.jpg);
-    background-size: auto;
-    background-repeat: repeat;
-    background-position: 100%;
-    
-  }
-  #headshot{
-    height: 20%;
-    width: 20%;
-    border-radius: 50%;
-    border: 3px solid lightslategrey;
-  }
-  
-  footer {
-    display: grid;
-    background-color: #343330;
-    text-align: center;
-    background: linear-gradient(315deg, #ffffff 0%, d7elec 74%);
-  }
-  #sidebar{
-    width: 20%;
-    background-color: whitesmoke;
-    color: black;
-    padding: 1rem;
-  }
-  
-  .nav-menu{
-    list-style-type: none;
-    padding: 0rem;
-    text-align: left;
-  }
-  
-  .Container .button{
-    font-size: large;
-    width: 0.1rem;
-    height: 0.1rem;
-    position: relative;
-    display: inline-block;
-    padding: 2rem;
-    overflow: hidden;
-    border-radius: 20px;
-    border: 3px solid #343330;
-    background: crimson;
-    cursor: pointer;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
-  }
-  
-  
 }
